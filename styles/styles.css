@@ -17,8 +17,20 @@
     font-size: 30px;
     line-height: 36px;
     color: #000000;
-    background-color: #E5E5E5;
+    background-color: #ffffff;
   }
+  .button {
+    font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;;
+  text-decoration: none;
+  text-transform: uppercase;
+  }
+  
   .page-header {
     color: #000000;
     background-color: #ffffff;
@@ -28,33 +40,34 @@
     line-height: 26px;
     color: #000000;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
   background-color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
     }
-    .navigation-user {
-        font-size: 20px;
-        line-height: 26px;
-        color: #000000;
-        font-weight: 700;
-        text-align: right;
-      background-color: #ffffff;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
     .main-index {
+      color: #000000;
+      background-color: #ffffff;
          background-image: url("../images/hero/index-background.jpg");
-    background-size: auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-      }
-      .advantages-list {
-        text-align: center;
-      }
-      .advantages-title {
-        font-size: 24px;
-        line-height: 28px;
-        font-weight: 700;
+            }
+    .hero {
+      text-align: center;
+    }
+    .hero-title {
+      text-transform: uppercase;
+    }
+    .advantage  {
+      background-color: #ffffff;
+      text-align: center;
+      color:#333333;
+    }
+    .advantage-title {
+        background-color: #82B3D3;
         text-transform: uppercase;
-        text-align: center;
+        color: #000000;
       }
+    .advantage-item {
+      background:  #82B3D3;
+    }
