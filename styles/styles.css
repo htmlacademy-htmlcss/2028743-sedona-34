@@ -30,7 +30,7 @@
   text-decoration: none;
   text-transform: uppercase;
   }
-  
+
   .page-header {
     color: #000000;
     background-color: #ffffff;
@@ -64,10 +64,15 @@
       color:#333333;
     }
     .advantage-title {
-        background-color: #82B3D3;
         text-transform: uppercase;
         color: #000000;
       }
-    .advantage-item {
-      background:  #82B3D3;
+    .block1 {
+      background-color: #82B3D3;;
     }
+.block2 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.block3 {
+  background: rgba(131, 179, 211, 0.2);
+}
