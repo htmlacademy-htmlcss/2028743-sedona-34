@@ -53,8 +53,7 @@
       text-align: center;
     background-color: #756157;
     text-decoration: none;
-    text-transform: capitalize;
-    }
+        }
     .main-index {
       color: #000000;
       background-color: #ffffff;
@@ -133,4 +132,26 @@ background-color: #ffffff;
 }
 .footer-logo {
   text-align: right;
+}
+.main-inner {
+  background-color: #ffffff;
+}
+.inner-header-title {
+    text-transform: capitalize;
+  font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+color: #ffffff;
+}
+.breadcrumbs {
+color: #ffffff;
+}
+.sorting-container  {
+  background-image: url("../images/footer/background-3.jpg");
+  background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #ffffff;
+       }
+.breadcrumbs-link {
+  color: inherit;
 }
