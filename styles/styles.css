@@ -358,3 +358,47 @@
     padding-bottom: 102px;
     color: #333333;
   }
+
+  .search-hotel{
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    padding-top: 91px;
+    padding-bottom: 93px;
+  }
+
+  .search-question{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .search-date{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+  }
+
+  .form-title{
+   display: flex;
+   padding-inline: 313px;
+  }
+
+  .form-seacher{
+    Width: 574px;
+    height: 60px;
+    padding-top: 12px;
+    background-color: #756157;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box;
+    }
