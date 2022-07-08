@@ -194,7 +194,6 @@
     width: 160px;
   }
 
-
   .header-bottom{
     position: relative;
     padding-top: 51px;
@@ -214,6 +213,23 @@
     background: url(../images/hero/maska.svg) no-repeat center center;
   }
 
+  .title-secondary {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .main-text {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+  }
 
   .utp{
     margin: 0;
@@ -231,8 +247,24 @@
     display: grid;
     align-items: stretch;
     grid-template-columns: 1fr 2fr;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color:#FFFFFF;
   }
 
+  .about-box-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-top: 92px;
+  }
+
+  .about-box-num, .about-box-info{
+    padding-inline: 85px;
+  }
   .about-box-reverse{
     grid-template-columns: 2fr 1fr;
   }
@@ -243,13 +275,86 @@
   }
 
   .about-box-description{
-    background-color: gray;
+    background-color:  #82B3D3;
   }
 
   .advantages{
+    font-family: 'PT Sans', sans-serif;
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+
+  .advantage-home, .advantage-gift{
+    background: rgba(131, 179, 211, 0.12);
+  }
+
+  .advantage-img{
+    width: 75px;
+    height: 72px;
+    padding-top: 80px;
+ }
+
+  .advantage-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#000000
+  }
+
+  .advantage-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 81px;
+    padding-inline: 85px;
+    color:#333333;
+  }
+
+  .utp-item {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    text-align: center;
+  }
+
+  .little-road, .empty-road {
+    background: rgba(131, 179, 211, 0.12);
+  }
+
+  .beautiful-road{
+    background: rgba(131, 179, 211, 0.2);
+  }
+
+  .utp-item-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 103px;
+  }
+
+  .utp-item-num{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+  }
+
+  .utp-item-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-inline: 85px;
+    padding-bottom: 102px;
+    color: #333333;
   }
