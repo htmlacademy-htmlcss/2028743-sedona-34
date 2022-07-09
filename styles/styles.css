@@ -386,6 +386,10 @@
   }
 
   .form-seacher{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box;
     Width: 574px;
     height: 60px;
     padding-top: 12px;
@@ -395,10 +399,76 @@
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
-    color: #FFFFFF;
     text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .follow{
+    background: url(../images/footer/background-3.jpg) no-repeat;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 94px;
     display: inline-block;
     vertical-align: top;
-    text-align: center;
     box-sizing: border-box;
-    }
+  }
+
+  .follow-us{
+    padding-top: 94px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .follow-description{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    padding-inline: 363px;
+  }
+
+  .footer{
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-social{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-item{
+    margin-right: 27px;
+  }
+
+  .footer-link{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .footer-logo{
+    margin-left: auto;
+    width: 115px;
+    height: 34px;
+  }
+
+  .contacts-phone{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    padding-inline: 194px;
+  }
