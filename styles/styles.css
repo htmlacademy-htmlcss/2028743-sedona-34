@@ -446,14 +446,15 @@
   .footer-item{
     display: flex;
     margin-right: 27px;
+    width: 22px;
+    height: 17px;
+    align-items: center;
   }
 
   .footer-link{
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    text-decoration: none;
+display: block;
+padding-top: 45px;
+padding-bottom: 35px;
   }
 
   .footer-logo{
