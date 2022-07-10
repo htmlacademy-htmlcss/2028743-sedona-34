@@ -444,6 +444,7 @@
   }
 
   .footer-item{
+    display: flex;
     margin-right: 27px;
   }
 
@@ -457,11 +458,16 @@
 
   .footer-logo{
     margin-left: auto;
-    width: 115px;
-    height: 34px;
-  }
+    min-width: 115px;
+    min-height: 34px;
+    padding-top: 49px;
+    padding-bottom: 38px;
+   }
 
   .contacts-phone{
+    display: block;
+    min-width: 331px;
+    min-height: 40px;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 40px;
