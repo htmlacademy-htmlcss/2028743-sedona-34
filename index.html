@@ -182,7 +182,67 @@
               <h3 class="form-seacher">Поиск гостиницы в Седоне</h3>
             </a>
           </div>
+      </section>
 
+      <section class="form">
+        <form action="https://echo.htmlacademy.ru" class="form-search no-js" method="post">
+          <fieldset class="form-body">
+            <p>
+              <label class="form-search-from" for="from">Дата заезда: </label>
+              <input class="form-search-field" id="from" name="date" placeholder="27 апреля 2020" type="text">
+              <button type="button" class="form-search-calendar">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
+                  </svg>
+              </button>
+            </p>
+            <p>
+              <label class="form-search-to" for="to">Дата заезда:</label>
+              <input class="form-search-field" id="to" name="date" placeholder="1 сентября 2021" type="text">
+              <button type="button" class="form-search-calendar">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
+                  </svg>
+              </button>
+            </p>
+            <div class="humans">
+            <p>
+            <label class="form-humans" for="adult">Взрослые:</label>
+                <button type="button"class="minus-adult">
+                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+              </button>
+              <input class="form-humans-field" id="adult" name="quantity" placeholder="2">
+              <button type="button"class="plus-adult">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+              </button>
+            </p>
+
+            <p>
+              <label class="form-humans" for="child">Дети:</label>
+              <span class="child-info">i</span>
+                  <button type="button"class="minus-child">
+                    <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                      </svg>
+                </button>
+                <input class="form-humans-field" id="child" name="quantity" placeholder="2">
+                <button type="button"class="plus-child">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </svg>
+                </button>
+              </p>
+            </div>
+            <button class="search-button" type="submit">Найти</button>
+         </fieldset>
+
+
+
+        </form>
       </section>
       <section class="follow">
         <h3 class="follow-us">Подпишитесь на рассылку</h3>
