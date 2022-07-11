@@ -183,7 +183,75 @@
               <h3 class="form-seacher">Поиск гостиницы в Седоне</h3>
             </a>
           </div>
+      </section>
 
+      <section class="form">
+        <form action="https://echo.htmlacademy.ru" class="form-search no-js" method="post">
+          <fieldset class="form-body">
+            <h3 class="form-search-title">Поиск гостиницы в Седоне</h3>
+              <button class="form-cancel" type="button">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+              </svg>
+              </button>
+            <p>
+              <label class="form-search-from" for="from">Дата заезда: </label>
+              <input class="form-search-field" id="from" name="date" placeholder="27 апреля 2020" type="text">
+              <button type="button" class="form-search-calendar">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
+                  </svg>
+              </button>
+              <h3 class="form-search-past">Мы не можем отправить вас в прошлое.</h3>
+            </p>
+            <p>
+              <label class="form-search-to" for="to">Дата заезда:</label>
+              <input class="form-search-field" id="to" name="date" placeholder="1 сентября 2021" type="text">
+              <button type="button" class="form-search-calendar">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
+                  </svg>
+              </button>
+              <h3 class="form-search-info"> На эти даты есть свободные номера. Пока есть.</h3>
+            </p>
+            <div class="humans">
+            <p>
+            <label class="form-humans" for="adult">Взрослые:</label>
+                <button type="button"class="minus-adult">
+                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+              </button>
+              <input class="form-humans-field" id="adult" name="quantity" placeholder="2">
+              <button type="button"class="plus-adult">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+              </button>
+            </p>
+
+            <p>
+              <label class="form-humans" for="child">Дети:</label>
+              <span class="child-info">i</span>
+                  <button type="button"class="minus-child">
+                    <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                      </svg>
+                </button>
+                <input class="form-humans-field" id="child" name="quantity" placeholder="2">
+                <button type="button"class="plus-child">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </svg>
+                </button>
+              </p>
+            </div>
+            <button class="search-button" type="submit">Найти</button>
+         </fieldset>
+
+
+
+        </form>
       </section>
       <section class="follow">
         <h3 class="follow-us">Подпишитесь на рассылку</h3>
@@ -198,23 +266,29 @@
           <ul class="footer-social">
             <li class="footer-item">
               <a class="footer-link" href=" https://vk.com/htmlacademy">
-                <span class="visually-hidden">VK</span>
+                <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1164 0.948C24.2824 0.402 24.1164 0 23.3214 0H20.6964C20.0284 0 19.7204 0.347 19.5534 0.73C19.5534 0.73 18.2184 3.926 16.3274 6.002C15.7154 6.604 15.4374 6.795 15.1034 6.795C14.9364 6.795 14.6854 6.604 14.6854 6.057V0.948C14.6854 0.292 14.5014 0 13.9454 0H9.81738C9.40038 0 9.14938 0.304 9.14938 0.593C9.14938 1.214 10.0954 1.358 10.1924 3.106V6.904C10.1924 7.737 10.0394 7.888 9.70538 7.888C8.81538 7.888 6.65038 4.677 5.36538 1.003C5.11638 0.288 4.86438 0 4.19338 0H1.56638C0.816382 0 0.666382 0.347 0.666382 0.73C0.666382 1.412 1.55638 4.8 4.81138 9.281C6.98138 12.341 10.0364 14 12.8194 14C14.4884 14 14.6944 13.632 14.6944 12.997V10.684C14.6944 9.947 14.8524 9.8 15.3814 9.8C15.7714 9.8 16.4384 9.992 17.9964 11.467C19.7764 13.216 20.0694 14 21.0714 14H23.6964C24.4464 14 24.8224 13.632 24.6064 12.904C24.3684 12.18 23.5184 11.129 22.3914 9.882C21.7794 9.172 20.8614 8.407 20.5824 8.024C20.1934 7.533 20.3044 7.314 20.5824 6.877C20.5824 6.877 23.7824 2.451 24.1154 0.948H24.1164Z" fill="#83B3D3"/>
+                  </svg>
               </a>
             </li>
 
             <li class="footer-item">
               <a class="footer-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
+                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z" fill="#83B3D3"/>
+                  </svg>
               </a>
             </li>
 
             <li class="footer-item">
               <a class="footer-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
+                <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.9402 11.5H16.5074C14.6467 11.5 13.3333 13.0938 13.3333 14.9V24.9937C13.3333 26.9062 14.6467 28.5 16.5074 28.5H32.1591C33.8009 28.5 35.3333 26.9062 35.3333 25.1V14.9C35.1143 13.0938 33.8009 11.5 31.9402 11.5ZM20.9949 24.0375V15.9625L28.3283 20L20.9949 24.0375Z" fill="#83B3D3"/>
+                  </svg>
               </a>
             </li>
           </ul>
-          
+
           <section class="footer-contacts">
             <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
           </section>
@@ -223,7 +297,7 @@
           </section>
          </footer>
 
-    </div>
+        </div>
 
 
 
