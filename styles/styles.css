@@ -480,3 +480,113 @@ padding-bottom: 35px;
     color: #000000;
     padding-inline: 194px;
   }
+
+.form-body{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 715px;
+    height: 561px;
+    background-color: #FFFFFF;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    margin-inline: 283px;
+    padding-inline: 70px;
+    }
+
+  .form-header{
+   display: flex;
+  }
+
+  .form-search-title{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    min-width: 413px;
+    margin-top: 51px;
+    margin-bottom: 63px;
+  }
+
+  .form-cancel{
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    margin-left: 111px;
+    margin-top: 51px;
+  }
+
+   .form-search-from{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .form-search-field{
+    background: #F2F2F2;
+    border-radius: 4px;
+    padding: 15px 278px 14px 19px;
+  }
+
+  .form-search-calendar{
+    opacity: 0.3;
+    background-color: transparent;
+    border: none;
+  }
+
+  .form-search-past{
+    display: flex;
+    align-items: flex-end;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FF5757;
+  }
+
+  .form-search-to{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .form-search-info{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-end;
+    color: #333333;
+  }
+
+  .humans{
+    display: flex;
+  }
+
+  .form-humans-field{
+    background: #F2F2F2;
+    border-radius: 4px;
+    width: 133px;
+    height: 50px;
+    text-align: center;
+}
+
+.search-button{
+font-family: 'PT Sans', sans-serif;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: #83B3D3;
+border-radius: 10px;
+width: 523px;
+}
