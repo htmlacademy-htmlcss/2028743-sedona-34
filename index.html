@@ -4,7 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
+
   </head>
 
   <body>
@@ -186,7 +189,6 @@
         </div>
       </section>
 
-      </section>
       <section class="follow">
         <h3 class="follow-us">Подпишитесь на рассылку</h3>
         <p class="follow-description">Только полезная информация и никакого
@@ -194,7 +196,8 @@
         <form class="follow-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="follow-field" type="text" id="follow-mail" name="follow-mail" placeholder="ваш e-mail">
           <button class="follow-button" type="submit">Подписаться</button>
-                </section>
+        </form>
+      </section>
 
       <footer class="footer">
         <ul class="footer-social">
@@ -235,115 +238,117 @@
         <section class="footer-contacts">
           <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </section>
-        <section class="footer-logo">
-          <img class="logo" src="images/footer/HTML Academy.svg" width="115" height="33" alt="Логотип html academy">
-        </section>
+        <div class="footer-logo">
+          <img class="footer-logo-pic" src="images/footer/html-academy.svg" width="115" height="33"
+            alt="Логотип html academy">
+        </div>
       </footer>
       <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
           href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
     </div>
 
-    <div class="modal">
-      <section class="form">
-        <form action="https://echo.htmlacademy.ru" class="form-search no-js" method="post">
-          <fieldset class="form-body">
-            <div class="form-header">
-              <h3 class="form-search-title">Поиск гостиницы в Седоне</h3>
-              <button type="button" class="form-cancel">
+    <!-- hidden window -->
+    <div class="modal hidden">
+      <form action="https://echo.htmlacademy.ru" class="form form-search no-js" method="post">
+        <fieldset class="form-body">
+          <div class="form-header">
+            <h3 class="form-search-title">Поиск гостиницы в Седоне</h3>
+            <button type="button" class="form-cancel">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"
+                  fill="black" />
+              </svg>
+            </button>
+          </div>
+          <div class="form-search-row">
+            <label class="form-search-label" for="from">Дата заезда: </label>
+            <div class="form-search-right">
+              <div class="form-search-wrap">
+                <input class="form-search-field" id="from" name="date" placeholder="27 апреля 2020" type="text">
+                <button type="button" class="form-search-calendar">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
+                      fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="form-search-past">Мы не можем отправить вас в прошлое.</p>
+            </div>
+          </div>
+
+          <div class="form-search-row">
+            <label class="form-search-label" for="to">Дата выезда:</label>
+            <div class="form-search-right">
+              <div class="form-search-wrap">
+                <input class="form-search-field" id="to" name="date" placeholder="1 сентября 2021" type="text">
+                <button type="button" class="form-search-calendar">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
+                      fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="form-search-info"> На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+          </div>
+
+          <div class="humans-row">
+            <label class="label-humans" for="adult">Взрослые:</label>
+            <div class="form-humans-wrap">
+              <button type="button" class="minus-plus">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"></path>
+                </svg>
+              </button>
+              <input class="form-humans-field" id="adult" name="quantity" placeholder="2">
+              <button type="button" class="minus-plus">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"
-                    fill="black" />
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"></path>
                 </svg>
               </button>
             </div>
-            <div class="form-search-row">
-              <label class="form-search-label" for="from">Дата заезда: </label>
-              <div class="form-search-right">
-                <div class="form-search-wrap">
-                  <input class="form-search-field" id="from" name="date" placeholder="27 апреля 2020" type="text">
-                  <button type="button" class="form-search-calendar">
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
-                        fill="black" />
-                    </svg>
-                  </button>
-                </div>
-                <p class="form-search-past">Мы не можем отправить вас в прошлое.</p>
-              </div>
-            </div>
+            <label class="label-humans-child" for="child">
+              Дети:
+              <span class="tooltip-btn">
+                <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_33716_651)">
+                    <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                    <path d="M1 0H0V1H1V0Z" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_33716_651">
+                      <rect width="1" height="9" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
 
-            <div class="form-search-row">
-              <label class="form-search-label" for="to">Дата выезда:</label>
-              <div class="form-search-right">
-                <div class="form-search-wrap">
-                  <input class="form-search-field" id="to" name="date" placeholder="1 сентября 2021" type="text">
-                  <button type="button" class="form-search-calendar">
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
-                        fill="black" />
-                    </svg>
-                  </button>
-                </div>
-                <p class="form-search-info"> На эти даты есть свободные номера. Пока есть.</p>
-              </div>
+                <span class="tooltip">
+                  Укажите количество детей, которые будут с вами, возраст которых от
+                  6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </span>
+            </label>
+            <div class="form-humans-wrap">
+              <button type="button" class="minus-plus">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
+                </svg>
+              </button>
+              <input class="form-humans-field" id="child" name="quantity" placeholder="1">
+              <button type="button" class="minus-plus">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
+                </svg>
+              </button>
             </div>
-
-            <div class="humans-row">
-              <label class="label-humans" for="adult">Взрослые:</label>
-              <div class="form-humans-wrap">
-                <button type="button" class="minus-plus">
-                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"></path>
-                  </svg>
-                </button>
-                <input class="form-humans-field" id="adult" name="quantity" placeholder="2">
-                <button type="button" class="minus-plus">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"></path>
-                  </svg>
-                </button>
-              </div>
-              <label class="label-humans-child" for="child">
-                Дети:
-                <div class="tooltip-btn">
-                  <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_33716_651)">
-                      <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
-                      <path d="M1 0H0V1H1V0Z" fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_33716_651">
-                        <rect width="1" height="9" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                  <div class="tooltip">
-                    Укажите количество детей, которые будут с вами, возраст которых от
-                    6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                  </div>
-                </div>
-              </label>
-              <div class="form-humans-wrap">
-                <button type="button" class="minus-plus">
-                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
-                  </svg>
-                </button>
-                <input class="form-humans-field" id="child" name="quantity" placeholder="1">
-                <button type="button" class="minus-plus">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <button class="search-button" type="submit">Найти</button>
-          </fieldset>
-        </form>
-      </section>
+          </div>
+          <button class="search-button" type="submit">Найти</button>
+        </fieldset>
+      </form>
+      <div></div>
   </body>
+
 </html>
