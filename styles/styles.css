@@ -414,6 +414,43 @@
     box-sizing: border-box;
   }
 
+  .follow-form {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .follow-field {
+    border: 0;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    width: 100%;
+  }
+
+  .follow-field::placeholder {
+    color: rgba(0, 0, 0, .6);
+    opacity: 1;
+  }
+
+  .follow-button {
+    border: 0;
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #fff;
+    background-color: #82B3D3;
+    text-transform: uppercase;
+    border-radius: 0 10px 10px 0;
+  }
+
   .follow-us{
     padding-top: 94px;
     font-weight: 700;
@@ -485,7 +522,7 @@ padding-bottom: 35px;
     display: inline-block;
     box-sizing: border-box;
     width: 715px;
-    height: 561px;
+    min-height: 561px;
     background-color: #FFFFFF;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
@@ -515,7 +552,7 @@ padding-bottom: 35px;
     height: 53px;
     border-radius: 50%;
     background-color: #F2F2F2;
-    margin-left: 111px;
+    margin-left: auto;
     margin-top: 51px;
   }
 
@@ -670,13 +707,13 @@ padding-bottom: 35px;
     justify-content: center;
     border-radius: 50%;
     position: relative;
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   .tooltip {
     position: absolute;
     top: 20px;
-    left: 50%;
+    left: 8px;
     transform: translateX(-50%);
     background-color: #333;
     color: #fff;
@@ -713,8 +750,12 @@ text-transform: uppercase;
 color: #FFFFFF;
 background-color: #83B3D3;
 border-radius: 10px;
-width: 523px;
+width: 100%;
 cursor: pointer;
+margin-top: 40px;
+margin-right: 70px;
+margin-bottom: 78px;
+padding: 12px 26px;
 }
 
 .modal {
