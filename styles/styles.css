@@ -494,6 +494,15 @@ body {
   border-radius: 0 10px 10px 0;
 }
 
+.follow-button:active{
+background-color: #68A2CA;;
+}
+
+.follow-button:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
+}
+
 .follow-us {
   padding-top: 63px;
   font-weight: 700;
