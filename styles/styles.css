@@ -495,7 +495,8 @@ body {
 }
 
 .follow-button:active{
-background-color: #68A2CA;;
+background-color: #68A2CA;
+color: rgba(255, 255, 255, 0.3);
 }
 
 .follow-button:disabled {
@@ -503,6 +504,15 @@ background-color: #68A2CA;;
   pointer-events: none;
 }
 
+.btn-blue {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.btn-blue:hover,
+.btn-blue:focus-visible {
+  background-color: #68A2CA;
+}
 .follow-us {
   padding-top: 63px;
   font-weight: 700;
