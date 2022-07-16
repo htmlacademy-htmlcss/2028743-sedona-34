@@ -903,6 +903,6 @@ background-color: #E6E6E6;
   z-index: 999;
 }
 
-modal.hidden {
+.modal.hidden {
   display: none;
 }
