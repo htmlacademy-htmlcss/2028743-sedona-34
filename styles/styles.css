@@ -630,6 +630,21 @@ color: rgba(255, 255, 255, 0.3);
   margin-top: 51px;
 }
 
+.form-cancel:active{
+background-color: #E6E6E6;
+opacity: 0.3;
+}
+
+.btn-cancel {
+background-color: #E6E6E6;
+}
+
+.btn-cancel:hover,
+.btn-cancael:focus-visible {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
 .form-search-row {
   display: flex;
 }
@@ -677,6 +692,16 @@ color: rgba(255, 255, 255, 0.3);
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+}
+
+.form-search-calendar:active{
+  background-color: #E6E6E6;
+}
+
+.btn-calendar:hover,
+.btn-calendar:focus-visible {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
 }
 
 .form-search-past {
@@ -756,6 +781,17 @@ color: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.minus-plus:active{
+  background-color: #E6E6E6;
+  opacity: 0.3;
+}
+
+.btn-mp:hover,
+.btn-mp:focus-visible {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
 }
 
 .form-humans-field {
