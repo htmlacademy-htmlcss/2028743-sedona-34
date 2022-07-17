@@ -37,6 +37,17 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-top {
   padding-left: 70px;
   padding-right: 70px;
@@ -433,8 +444,8 @@ body {
 
 .hotel-wide{
   width: 574px;
-  height: 60px;
 }
+
 .search-date {
   font-weight: 400;
   font-size: 22px;
@@ -449,7 +460,7 @@ body {
 }
 
 .follow {
-  background: url(../images/footer/background-3.jpg) no-repeat;
+  background: url(../images/footer/background-3.jpg) no-repeat top center/cover;
   background-color: #add1e9;
   font-family: 'PT Sans', sans-serif;
   text-align: center;
@@ -459,7 +470,6 @@ body {
   vertical-align: top;
   box-sizing: border-box;
   width: 100%;
-  height: 411px;
 }
 
 .follow-form {
@@ -561,6 +571,23 @@ color: rgba(255, 255, 255, 0.3);
   display: block;
   padding-top: 45px;
   padding-bottom: 35px;
+  color: #83B3D3;
+}
+
+.footer-link:active{
+  color:#68A2CA;
+}
+
+.footer-link:disabled{
+  color:rgba(104, 162, 202, 0.3);
+}
+
+.btm-link{
+ opacity: #83B3D3;
+}
+.btm-link:hover,
+.btm-link:focus-visible{
+  color: #68A2CA;
 }
 
 .footer-logo {
@@ -591,6 +618,43 @@ color: rgba(255, 255, 255, 0.3);
   color: #000000;
 }
 
+.contacts-phone:active{
+  color: #756157;
+}
+
+.contacts-phone:disabled{
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.btm-phone{
+  color: #000000;
+}
+
+.btm-phone:hover,
+.btm-phone:focus-visible{
+  color: #756157;
+}
+
+.footer-logo-pic{
+  color: #000000;
+}
+
+.footer-logo-pic:active{
+  color: #756157;
+}
+
+.footer-logo-pic:disabled{
+  color:rgba(117, 97, 87, 0.3);
+}
+
+.btm-pic{
+  color: #000000;
+}
+
+.btm-pic:hover,
+.btm-pic:focus-visible{
+  color: #756157;
+}
 .form-body {
   display: inline-block;
   box-sizing: border-box;
@@ -670,7 +734,7 @@ background-color: #E6E6E6;
 .form-search-field {
   font-size: 18px;
   padding: 20px;
-  border: 0;
+  border: 3px solid transparent;
   border-radius: 0;
   width: 100%;
   box-sizing: border-box;
@@ -680,8 +744,8 @@ background-color: #E6E6E6;
 
 .form-search-calendar {
   padding: 0;
-  border: 0;
   background: transparent;
+  border: 0;
   cursor: pointer;
   width: 32px;
   height: 32px;
@@ -773,7 +837,7 @@ background-color: #E6E6E6;
 
 .minus-plus {
   padding: 0;
-  border: 0;
+  border: 3px solid transparent;
   background: transparent;
   cursor: pointer;
   width: 32px;
@@ -820,7 +884,7 @@ background-color: #E6E6E6;
   margin-left: 10px;
 }
 
-.tooltip-btn:active{
+.tooltip-btn:hover{
   background: #68A2CA;
 }
 
@@ -841,7 +905,7 @@ background-color: #E6E6E6;
   opacity: 0;
 }
 
-.tooltip:hover{
+.tooltip-btn:hover .tooltip{
   opacity: 1;
 }
 
@@ -859,7 +923,7 @@ background-color: #E6E6E6;
 }
 
 .search-button {
-  border: 0;
+  border: 3px solid transparent;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
